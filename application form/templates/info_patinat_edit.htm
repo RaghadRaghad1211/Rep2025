@@ -1,0 +1,488 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel info_patinat edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>الرجوع إلى الفائمة</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="info_patinat_view.php?{$editlink}" {$view_page_button_attrs}>عرض</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN office_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_office_name}  r-vertical-field" 
+	data-signal-error-for="office_name{$id}" {$required_attr_office_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="office_name" data-fieldname="office_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_office_name}">
+		{BEGIN office_name_label}{$label info_patinat office_name }{END office_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$office_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="office_name" {$tooltipAttr info_patinat office_name } >
+		<div class="text-muted" >
+		{$tooltip info_patinat office_name }		</div>
+	</div>
+</div>
+
+
+{END office_name_fieldblock}
+											
+{BEGIN full_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_full_name}  r-vertical-field" 
+	data-signal-error-for="full_name{$id}" {$required_attr_full_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="full_name" data-fieldname="full_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_full_name}">
+		{BEGIN full_name_label}{$label info_patinat full_name }{END full_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$full_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="full_name" {$tooltipAttr info_patinat full_name } >
+		<div class="text-muted" >
+		{$tooltip info_patinat full_name }		</div>
+	</div>
+</div>
+
+
+{END full_name_fieldblock}
+											
+{BEGIN mother_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mother_name}  r-vertical-field" 
+	data-signal-error-for="mother_name{$id}" {$required_attr_mother_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="mother_name" data-fieldname="mother_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mother_name}">
+		{BEGIN mother_name_label}{$label info_patinat mother_name }{END mother_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mother_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mother_name" {$tooltipAttr info_patinat mother_name } >
+		<div class="text-muted" >
+		{$tooltip info_patinat mother_name }		</div>
+	</div>
+</div>
+
+
+{END mother_name_fieldblock}
+											
+{BEGIN id_number_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_number}  r-vertical-field" 
+	data-signal-error-for="id_number{$id}" {$required_attr_id_number}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="id_number" data-fieldname="id_number" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_number}">
+		{BEGIN id_number_label}{$label info_patinat id_number }{END id_number_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_number_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_number" {$tooltipAttr info_patinat id_number } >
+		<div class="text-muted" >
+		{$tooltip info_patinat id_number }		</div>
+	</div>
+</div>
+
+
+{END id_number_fieldblock}
+											
+{BEGIN sex_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sex}  r-vertical-field" 
+	data-signal-error-for="sex{$id}" {$required_attr_sex}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="sex" data-fieldname="sex" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sex}">
+		{BEGIN sex_label}{$label info_patinat sex }{END sex_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sex_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sex" {$tooltipAttr info_patinat sex } >
+		<div class="text-muted" >
+		{$tooltip info_patinat sex }		</div>
+	</div>
+</div>
+
+
+{END sex_fieldblock}
+											
+{BEGIN birth_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_birth}  r-vertical-field" 
+	data-signal-error-for="birth{$id}" {$required_attr_birth}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="birth" data-fieldname="birth" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_birth}">
+		{BEGIN birth_label}{$label info_patinat birth }{END birth_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$birth_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="birth" {$tooltipAttr info_patinat birth } >
+		<div class="text-muted" >
+		{$tooltip info_patinat birth }		</div>
+	</div>
+</div>
+
+
+{END birth_fieldblock}
+											
+{BEGIN mobile_number_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobile_number}  r-vertical-field" 
+	data-signal-error-for="mobile_number{$id}" {$required_attr_mobile_number}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="mobile_number" data-fieldname="mobile_number" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mobile_number}">
+		{BEGIN mobile_number_label}{$label info_patinat mobile_number }{END mobile_number_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mobile_number_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mobile_number" {$tooltipAttr info_patinat mobile_number } >
+		<div class="text-muted" >
+		{$tooltip info_patinat mobile_number }		</div>
+	</div>
+</div>
+
+
+{END mobile_number_fieldblock}
+											
+{BEGIN address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_address}  r-vertical-field" 
+	data-signal-error-for="address{$id}" {$required_attr_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="address" data-fieldname="address" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_address}">
+		{BEGIN address_label}{$label info_patinat address }{END address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$address_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="address" {$tooltipAttr info_patinat address } >
+		<div class="text-muted" >
+		{$tooltip info_patinat address }		</div>
+	</div>
+</div>
+
+
+{END address_fieldblock}
+											
+{BEGIN office_patinat_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_office_patinat_name}  r-vertical-field" 
+	data-signal-error-for="office_patinat_name{$id}" {$required_attr_office_patinat_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="office_patinat_name" data-fieldname="office_patinat_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_office_patinat_name}">
+		{BEGIN office_patinat_name_label}{$label info_patinat office_patinat_name }{END office_patinat_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$office_patinat_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="office_patinat_name" {$tooltipAttr info_patinat office_patinat_name } >
+		<div class="text-muted" >
+		{$tooltip info_patinat office_patinat_name }		</div>
+	</div>
+</div>
+
+
+{END office_patinat_name_fieldblock}
+											
+{BEGIN book_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_book_no}  r-vertical-field" 
+	data-signal-error-for="book_no{$id}" {$required_attr_book_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="book_no" data-fieldname="book_no" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_book_no}">
+		{BEGIN book_no_label}{$label info_patinat book_no }{END book_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$book_no_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="book_no" {$tooltipAttr info_patinat book_no } >
+		<div class="text-muted" >
+		{$tooltip info_patinat book_no }		</div>
+	</div>
+</div>
+
+
+{END book_no_fieldblock}
+											
+{BEGIN book_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_book_date}  r-vertical-field" 
+	data-signal-error-for="book_date{$id}" {$required_attr_book_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="book_date" data-fieldname="book_date" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_book_date}">
+		{BEGIN book_date_label}{$label info_patinat book_date }{END book_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$book_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="book_date" {$tooltipAttr info_patinat book_date } >
+		<div class="text-muted" >
+		{$tooltip info_patinat book_date }		</div>
+	</div>
+</div>
+
+
+{END book_date_fieldblock}
+											
+{BEGIN book_pic_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_book_pic}  r-vertical-field" 
+	data-signal-error-for="book_pic{$id}" {$required_attr_book_pic}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="book_pic" data-fieldname="book_pic" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_book_pic}">
+		{BEGIN book_pic_label}{$label info_patinat book_pic }{END book_pic_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$book_pic_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="book_pic" {$tooltipAttr info_patinat book_pic } >
+		<div class="text-muted" >
+		{$tooltip info_patinat book_pic }		</div>
+	</div>
+</div>
+
+
+{END book_pic_fieldblock}
+											
+{BEGIN book_attach_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_book_attach}  r-vertical-field" 
+	data-signal-error-for="book_attach{$id}" {$required_attr_book_attach}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="book_attach" data-fieldname="book_attach" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_book_attach}">
+		{BEGIN book_attach_label}{$label info_patinat book_attach }{END book_attach_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$book_attach_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="book_attach" {$tooltipAttr info_patinat book_attach } >
+		<div class="text-muted" >
+		{$tooltip info_patinat book_attach }		</div>
+	</div>
+</div>
+
+
+{END book_attach_fieldblock}
+											
+{BEGIN qr_code_info_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_qr_code_info}  r-vertical-field" 
+	data-signal-error-for="qr_code_info{$id}" {$required_attr_qr_code_info}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="qr_code_info" data-fieldname="qr_code_info" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_qr_code_info}">
+		{BEGIN qr_code_info_label}{$label info_patinat qr_code_info }{END qr_code_info_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$qr_code_info_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="qr_code_info" {$tooltipAttr info_patinat qr_code_info } >
+		<div class="text-muted" >
+		{$tooltip info_patinat qr_code_info }		</div>
+	</div>
+</div>
+
+
+{END qr_code_info_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							حفظ			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							إلغاء			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		تفريغ الحقول		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="info_patinat_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		عرض		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
